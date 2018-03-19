@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Test_19_03_18
+﻿namespace Test_19_03_18
 {
     class Program
     {

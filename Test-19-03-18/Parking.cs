@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Test_19_03_18
 {
@@ -21,14 +18,14 @@ namespace Test_19_03_18
             string number = Console.ReadLine();
             Console.Write("Car type: ");
             string type = Console.ReadLine();
-            Console.WriteLine("Driver name; ");
+            Console.Write("Driver name: ");
             string name = Console.ReadLine();
-            Console.WriteLine("Driver surname: ");
+            Console.Write("Driver surname: ");
             string surname = Console.ReadLine();
-            Console.WriteLine("Driver passport number: ");
+            Console.Write("Driver passport number: ");
             string passportNum = Console.ReadLine();
             
-            if (Convert.ToBoolean(Cars.FindIndex(car => car.Number == number)))
+            if (Convert.ToBoolean(Cars.Find(car => car.Number == number)))
             {
                 Console.WriteLine("Car already added");
             }
@@ -40,7 +37,7 @@ namespace Test_19_03_18
 
         public void DeleteCar()
         {
-            Console.WriteLine("Number: ");
+            Console.Write("Number: ");
             string number = Console.ReadLine();
             Cars.Remove(Cars.Find(car => car.Number == number));
         }

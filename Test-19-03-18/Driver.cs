@@ -2,9 +2,9 @@
 {
     public class Driver
     {
-        private string Name;
-        private string Surname;
-        private string PassportNum;
+        public string Name { get; private set; }
+        public string Surname { get; private set; }
+        public string PassportNum { get; private set; }
 
         public Driver(string name, string surname, string passportNum)
         {

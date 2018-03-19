@@ -21,5 +21,10 @@ namespace Test_19_03_18
         {
             return Convert.ToInt32(DateTime.Now - startDate)/3600 * CostPerHour;
         }
+
+        public override string ToString()
+        {
+            return $"{type} {startDate} {Number} {driver.Name} {driver.Surname} {driver.Surname}";
+        }
     }
 }
